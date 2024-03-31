@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Animal Crossing——Mom's Letter</title>
+  </head>
+
+  <h1 style="background-color:lightskyblue; font-family:Courier New; font-size:40px; text-align: center;">(^^)*Welcome To Animal Crossing*(^^)</h1>
+
+    <style>
+        body {
+            background-image: url("file:///Users/neverwakeup/Downloads/创意交互设计/interaction%20design%202024%20/background.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+
+
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
+       <style>
+           body{
+               margin-top:10px;
+               padding: 50px 100px;
+           }
+           #CyuuOu{
+             position: absolute;
+             top: 200px;
+             left: 25%;
+             height: 600px;
+             padding: 2.5%;
+             width: 500px;
+             opacity:0.9;
+             border: 2px solid #FFE87C;
+             background-color: #FFFFC2;
+             transform: scale(1,1);
+             color: #43C6DB;
+             font-size: 20px;
+             font-family:Courier New;
+           }
+           .form-control{
+               min-height:500px;
+               margin: 30px;
+               border-color: skyblue;
+           }
+           #editor1 {
+               height: 500px;
+               display: inline-block;
+           }
+
+           .music{
+               display: none;
+           }
+
+           }
+           #btn2{
+               display: none;
+           }
+           #btn3{
+               display: none;
+           }
+           .button.red{
+               margin-left: 90%;
+               width: 100px;
+               height: 50px;
+               box-shadow: 0 1px 2px #8fcaee inset,0 -1px 0 #497897 inset,0 -2px 3px #8fcaee inset;
+               background: -webkit-linear-gradient(top,#42a4e0,#2e88c0);
+               background: -moz-linear-gradient(top,#42a4e0,#2e88c0);
+               background: linear-gradient(top,#42a4e0,#2e88c0);
+       }
+       </style>
+           <link rel="icon" href="./logo.ico">
+           <link href="css/buttonStyle.css">
+
+   <body>
+
+   <div id="CyuuOu"><span id='title' style="color:#43C6DB;">*信箱里有新内容哩*</span>
+   <div id="editparent">
+
+       <!-- 编辑器控制按钮 -->
+       <div id='editControls' style='text-align:center; padding:5px;'>
+       </div>
+
+   <!--    div负责文本内容的显示-->
+       <div id="editor1" class='form-control'  contenteditable >
+           <h3></h3>
+       </div>
+
+       <!-- 打字音效 -->
+       <audio controls src="https://downsc.chinaz.net/Files/DownLoad/sound1/202104/14136.mp3" id="music3" class="music">
+           Your browser does not support the
+           <code>audio</code> element.
+   </audio>
+   </div>
+   <button id="btn1" type="button" class="button red"><b>打开看看哩&#9992</b></button>
+
+
+   <script>
+       // 默认文本聚焦的
+       var editor1 = document.getElementById("editor1");
+       editor1.focus();
+       var i = 0;
+       var text = ""
+
+       var text1 = "*仰望青空 <br> 追寻 <br> 飞机云的轨迹。 <br> 思绪翻飞， <br> 忆起我的孩子远行之日。*  <br>                    恭喜搬迁——妈妈 &#10084 ";
+
+
+       var t = ""
+       var timer = null;
+
+       var btn1 =  document.getElementById("btn1");
+
+       // 输出字的函数
+       function type()
+       {
+           editor1.focus();
+           t += text[i];
+           // console.log(t)
+           i ++;
+           editor1.innerHTML = "<h1>" + t + "</h1>";
+           if (i >= text.length){
+
+               clearInterval(timer)
+               i = 0;
+               text="";
+
+           }
+
+       }
+       btn1.onclick = function(){
+           console.log("打开看看哩&#10162");
+           editor1.innerHTML = "";
+           text = text1;
+           timer = setInterval(type, 170);
+           let audioPlay = document.getElementById("music3").play();
+           btn1.style.display = "none";
+       }
+   </script>
+  </body>
+  </html>
