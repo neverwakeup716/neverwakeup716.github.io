@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>FISH SPACE</title>
+		<link rel="icon" href="fish icon.png">
+		<link rel="stylesheet" href="style.css"
+
+	</head>
+
+<body>
+	<section class="showcase active">
+		<header>
+					<div class="logo">
+						<img src="fish icon.png" >
+
+					</div>
+					<div class="toggle active"></div>
+		</header>
+
+			<video src="SEA.mov" autoplay loop muted></video>
+			<div class="text">
+					<h2>fish</h2>
+					<h3>say hi!!!</h3>
+					<p>my first website,my name is fanziyu</p>
+					<a href="/INTRODUCE.html">GO TO SEA^^</a>
+			</div>
+
+
+	</div>
+
+			<ul class="social">
+					<li><a href="#"><img src="weixin.png" alt=""></a></li>
+					<li><a href="#"><img src="weibo.png" alt=""></a></li>
+					<li><a href="#"><img src="qq.png" alt=""></a></li>
+			</ul>
+	</section>
+
+
+	<div class="menu">
+			<ul>
+				 <li><a href="#">HOME</a></li>
+				 <li><a href="#">INTRODUCE</a></li>
+				 <li><a href="#">PROJECT</a></li>
+			</ul>
+	</div>
+
+	<script>
+//  控制菜单出场
+			const menuToggle = document.querySelector('.toggle');
+			const showcase = document.querySelector('.showcase');
+
+			menuToggle.addEventListener('click',() =>{
+					menuToggle.classList.toggle('active');
+					showcase.classList.toggle('active');
+			});
+
+			window.addEventListener('DOMContentLoaded',() =>{
+				const showcase = document.querySelector('.showcase');
+				if (menuToggle.classList.contains('active')) {
+						showcase.classList.add('active');
+				} else{
+						showcase.classList.remove('active')
+				}
+			});
+
+
+
+
+	</script>
+</body>
+</html>
