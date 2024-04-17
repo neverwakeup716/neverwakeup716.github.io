@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>introduce</title>
+      <link rel="icon" href="fish icon.png">
+    	<link rel="stylesheet" href="style1.css">
+      <link href="https://fonts.googlefonts.cn/css?family=Press+Start+2P" rel="stylesheet">
+  </head>
+  <body>
+
+    <header>
+
+      <h1 class="logo">FISH SPACE</h1>
+      <div class="divider"></div>
+      <nav class="nav">
+        <a href="personal page.html">HOME</a>
+        <a class="nav-link" href="#PROJECT" data-nav-link >PROJECT</a>
+        <a class="nav-link" href="#INTRODUCE" data-nav-link >ABOUT ME</a>
+      </nav>
+    </header>
+    <div class="gif">
+      <img src="wave.gif"></div>
+
+
+    <section class="project" id="PROJECT">
+      <div class="text1">
+        <h1>Project &#9829;</h1>
+        <h2>01 Capsule desigen</h2>
+
+
+        <img class="image1" src="capsule1.jpg" >
+        <img class="image2" src="capsule2.png" >
+        <img class="image3" src="capsule3.png" >
+        <img class="image4" src="capsule4.png" >
+        <img class="image5" src="capsule5.png" >
+        <img class="image6" src="capsule6.png" >
+        <img class="image7" src="capsule7.png" >
+        <img class="image8" src="capsule8.png" >
+        <img class="image9" src="capsule9.png" >
+        <img class="image10" src="capsule10.png" >
+      </div>
+
+
+        <div class="accordion">
+
+    <ul>
+      <li tabindex="1">
+        <div>
+          <a href="#">
+
+            <p>Poster 1</p>
+          </a>
+        </div>
+      </li>
+
+      <li tabindex="2">
+        <div>
+          <a href="#">
+
+           <p>Poster 2</p>
+          </a>
+        </div>
+      </li>
+
+      <li tabindex="3">
+        <div>
+          <a href="#">
+
+            <p>Poster 3</p>
+          </a>
+        </div>
+      </li>
+
+      <li tabindex="4">
+        <div>
+          <a href="#">
+
+            <p>Poster 4</p>
+          </a>
+        </div>
+      </li>
+
+      <li tabindex="5">
+        <div>
+          <a href="#">
+
+            <p>Poster 5</p>
+          </a>
+        </div>
+      </li>
+
+      <li tabindex="6">
+        <div>
+          <a href="#">
+
+            <p>Poster 6</p>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <p class="about">
+
+  </p>
+
+
+    </section>
+
+
+
+    <section class="introduce" id="INTRODUCE">
+
+      <div class="top"><img src="stone.png"></div>
+      <div class="text">
+        <h1>&#9733; About Me</h1>
+        <h2>fAn ziYu</h2>
+        <p>student graphic designer</p>
+        <a>e-mail:neverwakeup16@qq.com</a>
+
+        <div class="button">
+          <button class="star" id="star1" >&#9733;</button>
+        </div>
+
+        <div class="button">
+          <button class="star" id="star2" >&#9733;</button>
+        </div>
+
+        <div class="button">
+          <button class="star" id="star3" >&#9733;</button>
+        </div>
+
+        <div id="imageContainer1" style="display:none;">
+          <img id="fish1" src="fish 1.png" height="300px" width="300px" alt="The Image"  style="">
+        </div>
+
+        <div id="imageContainer2" style="display:none;">
+          <img id="jianjie" src="jianjie.png" height="300px" width="300px" alt="The Image"  style="">
+        </div>
+
+        <div id="imageContainer3" style="display:none;">
+          <img id="zhengjianzhao" src="zhengjianzhao.png" height="300px" width="300px" alt="The Image"  style="">
+        </div>
+
+
+
+        <!-- Add id to image -->
+
+
+    </section>
+
+
+    <script>
+
+    document.getElementById('star1').addEventListener('click', function() {
+// 获取图片容器
+    var imageContainer1 = document.getElementById('imageContainer1');
+// 获取图片
+    var image = document.getElementById('fish1');
+
+// 根据当前显示状态决定下一个状态
+    if (imageContainer1.style.display === 'none') {
+  // 显示图片
+    imageContainer1.style.display = 'block';
+    } else {
+  // 隐藏图片
+    imageContainer1.style.display = 'none';
+    }
+    });
+
+    document.getElementById('star2').addEventListener('click', function() {
+// 获取图片容器
+    var imageContainer2 = document.getElementById('imageContainer2');
+// 获取图片
+    var image = document.getElementById('fish1');
+
+// 根据当前显示状态决定下一个状态
+    if (imageContainer2.style.display === 'none') {
+  // 显示图片
+    imageContainer2.style.display = 'block';
+    } else {
+  // 隐藏图片
+    imageContainer2.style.display = 'none';
+    }
+    });
+
+    document.getElementById('star3').addEventListener('click', function() {
+// 获取图片容器
+    var imageContainer3 = document.getElementById('imageContainer3');
+// 获取图片
+    var image = document.getElementById('fish1');
+
+// 根据当前显示状态决定下一个状态
+    if (imageContainer3.style.display === 'none') {
+  // 显示图片
+    imageContainer3.style.display = 'block';
+    } else {
+  // 隐藏图片
+    imageContainer3.style.display = 'none';
+    }
+    });
+    </script>
+
+  </body>
+</html>

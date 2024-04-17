@@ -1,0 +1,457 @@
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 2s ease-in;
+  }
+
+body{
+    background-color: #000;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url('sand.png');
+  height: 80px;
+  width: 1500px;
+  position: fixed;
+  top: 0;
+  z-index: 9999999999;
+}
+
+.gif{
+    margin-top: 50px;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    position: relative;
+    z-index:-2;
+    display: inline-block;
+}
+
+.text1 h1{
+    position: relative;
+    font-family: 'Press Start 2P'cursive;
+    font-size: 1em;
+    color:lightblue;
+    float: right;
+    right: 20px;
+    font-weight: 400;
+    max-width: 700px;
+    margin-top: 0;
+}
+
+.text1 h2{
+    position: relative;
+    font-family: 'Press Start 2P'cursive;
+    font-size: 2em;
+    color:#fff;
+    right: 20px;
+    font-weight: 400;
+    max-width: 700px;
+    left:20px;
+    top: 100px;
+}
+
+.image1{
+    position: relative;
+    width: 400px;
+    left:120px;
+    top:200px;
+}
+
+.image2{
+    position: relative;
+    width: 300px;
+    left:150px;
+    top:200px;
+}
+
+.image3{
+    position: relative;
+    width: 300px;
+    left:300px;
+    top:200px;
+}
+
+.image4{
+    position: relative;
+    width: 300px;
+    right:15px;
+    top:400px;
+}
+
+.image5{
+    position: relative;
+    width: 300px;
+    left:120px;
+    top:430px;
+}
+
+.image6{
+    position: relative;
+    width: 300px;
+    left:120px;
+    top:430px;
+}
+
+.image7{
+    position: relative;
+    width: 300px;
+    left:130px;
+    top:430px;
+}
+
+.image8{
+    position: relative;
+    width: 300px;
+    left:100px;
+    top:300px;
+}
+
+.image9{
+    position: relative;
+    width: 300px;
+    left:100px;
+    top:300px;
+}
+
+.image10{
+    position: relative;
+    width: 300px;
+    left:100px;
+    top:300px;
+}
+
+.accordion {
+  width: 100%;
+  max-width: 1600px;
+  height: 500px;
+  overflow: hidden;
+  margin-top: 2000px;
+  margin-left: 50px;
+}
+
+.accordion ul {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+.accordion ul li {
+  display: table-cell;
+  vertical-align: bottom;
+  position: relative;
+  width: 16.666%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 500ms ease;
+}
+
+.accordion ul li div {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+
+.accordion ul li div a {
+  display: block;
+  height: 500px;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  color: #fff;
+  text-decoration: none;
+  font-family: Open Sans, sans-serif;
+  transition: all 200ms ease;
+}
+
+.accordion ul li div a * {
+  opacity: 0;
+  margin: 0;
+  width: 100%;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 5;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.accordion ul li div a h2 {
+  font-family: Montserrat, sans-serif;
+  text-overflow: clip;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+  top: 160px;
+}
+
+.accordion ul li div a p {
+  top: 160px;
+  font-size: 13.5px;
+}
+
+.accordion ul li:nth-child(1) {
+  background-image: url("qiuzhao1.png");
+  width: 100%;
+  height: 100%;
+}
+
+.accordion ul li:nth-child(2) {
+  background-image: url("qiuzhao2.png");
+  width: 100%;
+  height: 100%;
+}
+.accordion ul li:nth-child(3) {
+  background-image: url("tuxiang.png");
+  width: 100%;
+  height: 100%;
+}
+
+.accordion ul li:nth-child(4) {
+  background-image: url("dushu.png");
+  width: 100%;
+  height: 100%;
+}
+
+.accordion ul li:nth-child(5) {
+  background-image: url("guangchun.png");
+  width: 100%;
+  height: 100%;
+}
+
+.accordion ul li:nth-child(6) {
+  background-image: url("fengcai.png");
+  width: 100%;
+  height: 100%;
+}
+
+.accordion ul:hover li, .accordion ul:focus-within li {
+  width: 8%;
+}
+
+.accordion ul li:focus {
+  outline: none;
+}
+
+.accordion ul:hover li:hover,
+.accordion ul li:focus, .accordion ul:focus-within li:focus {
+  width: 60%;
+}
+
+.accordion ul:hover li:hover a,
+.accordion ul li:focus a, .accordion ul:focus-within li:focus a {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.accordion ul:hover li:hover a *,
+.accordion ul li:focus a *, .accordion ul:focus-within li:focus a * {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.accordion ul:hover li {
+  width: 8% !important;
+}
+
+.accordion ul:hover li a * {
+  opacity: 0 !important;
+}
+
+.accordion ul:hover li:hover {
+  width: 60% !important;
+}
+
+.accordion ul:hover li:hover a {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.accordion ul:hover li:hover a * {
+  opacity: 1 !important;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+
+introduce{
+    z-index: -999;
+    height:300px;
+
+}
+
+
+.top{
+    position: absolute;
+    z-index: -99;
+}
+
+
+
+.text h1{
+    position: relative;
+    font-family: 'Press Start 2P'cursive;
+    font-size: 1em;
+    color:#FFCCFF;
+    margin: 130px 30px;
+    font-weight: 400;
+    max-width: 700px;
+}
+
+.text h2{
+    position: relative;
+    font-family: 'Press Start 2P'cursive;
+    font-size: 5em;
+    color:#fff;
+    margin-left: 30px;
+    font-weight: 400;
+    max-width: 700px;
+}
+
+.text p{
+    position: relative;
+    font-family: 'Press Start 2P'cursive;
+    font-size: 1.1em;
+    color:#fff;
+    margin: 20px 30px;
+    font-weight: 400;
+    max-width: 700px;
+}
+
+.text a{
+    position: relative;
+    font-family: 'Press Start 2P'cursive;
+    font-size: 1.1em;
+    color:#fff;
+    left:900px;
+    top:200px;
+    font-weight: 400;
+    max-width: 700px;
+}
+
+button {
+    color: #fff;
+    background-color: #000;
+    margin-left: 300px;
+    margin-top: 100px;
+    font-size: 30px;
+    border: none;
+    display: inline-block;
+    cursor: pointer; /* 鼠标光标变为点击手势 */
+    transition: background-color 0.3s;
+    z-index: 9999;
+    position:relative;
+}
+
+#star3{
+  color: #FFCCFF;
+  position: relative;
+  left: 500px;
+  bottom: 100px;
+}
+
+#star2 {
+  color: lightblue;
+  position: relative;
+  left: 200px;
+}
+
+.star:hover {
+  background-color: #FFCCFF; /* 鼠标悬浮时按钮颜色 */
+}
+
+#imageContainer1{
+  position: relative;
+  bottom: 350px;
+  left: 150px;
+
+}
+
+#imageContainer2{
+  position: relative;
+  bottom: 150px;
+  left: 400px;
+}
+
+#imageContainer3{
+  position: relative;
+  bottom: 300px;
+  left: 800px;
+}
+
+.logo{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size:24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav a{
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    padding:8px 16px;
+    transition: 300ms;
+    border-radius: 99px;
+
+}
+
+.nav a:hover{
+    color:lightblue;
+}
+
+.nav .logo{
+  display:none;
+
+}
+
+@media (max-width: 800px) {
+    .nav{
+        position: absolute;
+        left: 0;
+        top:0;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        height: 100vh;
+        width: 50%;
+        padding: 0px 20px;
+        gap: 30px;
+        }
+    .nav .logo{
+        margin-left: 16px;
+        margin-top: 20px;
+        display: block;
+    }
+    .divider{
+        background: rgba(255,255,255,0.1);
+        width: 100%;
+        height: 2px;
+        margin: 30px 0px;
+    }
+
+
+
+}

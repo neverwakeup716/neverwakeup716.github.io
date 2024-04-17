@@ -1,72 +1,78 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-	<head>
-		<meta charset="utf-8">
-		<title>FISH SPACE</title>
-		<link rel="icon" href="fish icon.png">
-		<link rel="stylesheet" href="style.css"
+ <head>
+  <meta charset="utf-8">
+  <title>FISH SPACE</title>
+  <link rel="icon" href="fish icon.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googlefonts.cn/css?family=Press+Start+2P" rel="stylesheet">
 
-	</head>
+ </head>
 
 <body>
-	<section class="showcase active">
-		<header>
-					<div class="logo">
-						<img src="fish icon.png" >
+ <section class="showcase active">
+  <header>
+     <div class="logo">
+      <img src="fish icon.png" >
 
-					</div>
-					<div class="toggle active"></div>
-		</header>
+     </div>
+     <div class="toggle active"></div>
+  </header>
 
-			<video src="SEA.mov" autoplay loop muted></video>
-			<div class="text">
-					<h2>fish</h2>
-					<h3>say hi!!!</h3>
-					<p>my first website,my name is fanziyu</p>
-					<a href="/INTRODUCE.html">GO TO SEA^^</a>
-			</div>
-
-
-	</div>
-
-			<ul class="social">
-					<li><a href="#"><img src="weixin.png" alt=""></a></li>
-					<li><a href="#"><img src="weibo.png" alt=""></a></li>
-					<li><a href="#"><img src="qq.png" alt=""></a></li>
-			</ul>
-	</section>
+   <video src="SEA.mov" autoplay loop muted></video>
+   <div class="text">
+     <h2>fish</h2>
+     <h3>say hi!!!</h3>
+     <p>Welcom to my website ☆</p>
+     <a href="introduce.html">GO TO SEA^^</a>
+   </div>
 
 
-	<div class="menu">
-			<ul>
-				 <li><a href="#">HOME</a></li>
-				 <li><a href="#">INTRODUCE</a></li>
-				 <li><a href="#">PROJECT</a></li>
-			</ul>
-	</div>
+ </div>
 
-	<script>
+
+   <ul class="social">
+     <li><a href="https://mp.weixin.qq.com/mp/qrcode?scene=10000005&size=102&__biz=Mzk0NTQxNTAyMA==&mid=2247483676&idx=1&sn=12c4e7dbf858caace0c9d3f12ccc3c20&send_time="><img src="weixin.png"   alt=""></a></li>
+     <li><a href="https://www.instagram.com/eyx_wakeup/"><img src="ins.png"  alt=""></a></li>
+   </ul>
+ </section>
+
+
+ <div class="menu">
+   <ul>
+     <li><a href="personal page.html">HOME</a></li>
+     <br>
+     <li><a href="introduce.html">INTRODUCE AND <br> ME</a></li>
+   </ul>
+ </div>
+
+
+
+ <script>
+
+
+
 //  控制菜单出场
-			const menuToggle = document.querySelector('.toggle');
-			const showcase = document.querySelector('.showcase');
+   const menuToggle = document.querySelector('.toggle');
+   const showcase = document.querySelector('.showcase');
 
-			menuToggle.addEventListener('click',() =>{
-					menuToggle.classList.toggle('active');
-					showcase.classList.toggle('active');
-			});
+   menuToggle.addEventListener('click',() =>{
+     menuToggle.classList.toggle('active');
+     showcase.classList.toggle('active');
+   });
 
-			window.addEventListener('DOMContentLoaded',() =>{
-				const showcase = document.querySelector('.showcase');
-				if (menuToggle.classList.contains('active')) {
-						showcase.classList.add('active');
-				} else{
-						showcase.classList.remove('active')
-				}
-			});
-
-
+   window.addEventListener('DOMContentLoaded',() =>{
+    const showcase = document.querySelector('.showcase');
+    if (menuToggle.classList.contains('active')) {
+      showcase.classList.add('active');
+    } else{
+      showcase.classList.remove('active')
+    }
+   });
 
 
-	</script>
+
+
+ </script>
 </body>
 </html>
